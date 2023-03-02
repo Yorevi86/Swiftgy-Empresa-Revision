@@ -1,0 +1,19 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+$main_font: "Montserrat", sans-serif;
+
+//Colors
+$black: #0f0f0f;
+$darkgray: rgb(36, 36, 36);
+$mediumgray: rgb(46, 46, 46);
+$lightgray: rgb(56, 56, 56);
+$primarycolor: #a5cc15;
+$darkprimarycolor: #5d6d24cb;
+$white: #fff;
+$shadow: rgba(0, 0, 0, 0.1);
+
+//MediaQuery sizes
+$phone: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;

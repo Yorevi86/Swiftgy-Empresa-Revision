@@ -1,0 +1,40 @@
+@use 'base/mixins' as m;
+@use 'base/vars' as v;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: v.$main_font;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fp-next {
+    left: 680px;
+}
+
+.fp-prev {
+    left: 590px!important;
+}
+
+.fp-overflow {
+    padding-bottom: 4rem;
+}
+
+#fp-nav {
+    left: 2rem;
+    color: #fff;
+    filter: invert(50%);
+}

@@ -1,0 +1,17 @@
+@use 'base/vars' as v;
+@use 'base/mixins' as m;
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    gap: 2rem;
+    padding: .5rem 2rem;
+    background: transparent;
+    color: v.$white;
+    font-size: .8rem;
+    font-weight: 600;
+    top: 3rem;
+    left: 0;
+    filter: invert(50%);
+}

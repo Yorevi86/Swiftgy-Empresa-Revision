@@ -1,0 +1,50 @@
+@use "base/mixins" as m;
+@use "base/vars" as v;
+
+.faq-question {
+  background-color: v.$darkgray;
+  color: v.$white;
+  font-size: 1.2rem;
+  width: 80%;
+
+  &[open] {
+    summary {
+      margin-bottom: 0.5em;
+      &::after {
+        color: v.$white;
+        font-size: 3.5rem;
+        font-weight: 600;
+        content: "\2013";
+      }
+    }
+    div {
+      background-color: v.$lightgray;
+      padding: 2em 4em 2em 2em;
+      font-size: 1rem;
+      font-weight: 600;
+      border-top: 3px solid v.$white;
+      a {
+        color: v.$primarycolor;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+summary {
+  padding: 1em 1.3rem;
+  line-height: 1.8rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &::after {
+    color: v.$white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    content: "\002B";
+  }
+}
